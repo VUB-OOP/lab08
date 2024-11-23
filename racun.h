@@ -1,4 +1,5 @@
 #include <string>
+#include <vector>
 
 class Racun {
 public:
@@ -11,4 +12,5 @@ public:
 protected:
   double stanje;
   std::string valuta;
+  std::vector<double> transakcije;
 };
