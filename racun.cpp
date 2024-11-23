@@ -1,4 +1,5 @@
 #include "racun.h"
+#include <iostream>
 
 Racun::Racun(double stanje, std::string valuta) {
   this->stanje = stanje;
@@ -11,6 +12,12 @@ double Racun::dohvatiStanje() {
 
 std::string Racun::dohvatiStanjeTekst() {
   return std::to_string(stanje) + " " + valuta;
+}
+
+void Racun::prikaziTransakcije() {
+  for (int i = 0; i < transakcije.size(); i++) {
+    std::cout << transakcije[i] << " " << valuta << std::endl;
+  }
 }
 
 bool Racun::operator==(const Racun &racun) {

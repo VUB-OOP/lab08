@@ -7,6 +7,8 @@ public:
 
   double dohvatiStanje();
   std::string dohvatiStanjeTekst();
+  void prikaziTransakcije();
+
   bool operator==(const Racun &racun);
 
 protected:
