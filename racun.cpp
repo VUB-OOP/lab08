@@ -1,5 +1,10 @@
 #include "racun.h"
 
+Racun::Racun(double stanje, std::string valuta) {
+  this->stanje = stanje;
+  this->valuta = valuta;
+}
+
 double Racun::dohvatiStanje() {
   return stanje;
 }
