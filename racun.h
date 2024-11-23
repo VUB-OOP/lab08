@@ -8,6 +8,7 @@ public:
   double dohvatiStanje();
   std::string dohvatiStanjeTekst();
   void prikaziTransakcije();
+  int brojTransakcija();
 
   bool operator==(const Racun &racun);
 

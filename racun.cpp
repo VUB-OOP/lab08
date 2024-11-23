@@ -20,6 +20,10 @@ void Racun::prikaziTransakcije() {
   }
 }
 
+int Racun::brojTransakcija() {
+  return transakcije.size();
+}
+
 bool Racun::operator==(const Racun &racun) {
   if (stanje == racun.stanje && valuta == racun.valuta) {
     return true;
