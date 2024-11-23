@@ -4,6 +4,7 @@ class Racun {
 public:
   double dohvatiStanje();
   std::string dohvatiStanjeTekst();
+  bool operator==(const Racun &racun);
 
 protected:
   double stanje;
